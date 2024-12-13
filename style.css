@@ -1,0 +1,43 @@
+body{margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;}
+.weather-app{
+  width: 80%;
+  display: flex;
+  text-align: center;
+  background-color: #f4f9ff;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(37, 36, 36, 0.2);
+  padding: 20px;
+}
+.weather-app>div{flex: 1;}
+.weather-app>div>p{
+  padding: 10px 20%;
+}
+input[type="text"]{
+  padding: 10px; margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button{
+  padding: 10px 20px;
+  border:none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 날씨결과 */
+.weather-container{
+  padding: 20px;
+  border-radius: 10px;
+  color: #000000;
+  transition: background-color .5s;
+}
+/* 날씨 상태에 따른 배경색 */
+.clear { background-color: #f9d71c; }
+.cloudy { background-color: #90a4ae; }
+.rainy { background-color: #4a90e2; }
+.snow { background-color: #d0e7ff; }
+.atmosphere { background-color: #aaaaaa; }
+.thunderstorm { background-color: #4a4a8a; }
+.drizzle { background-color: #76baff; }
